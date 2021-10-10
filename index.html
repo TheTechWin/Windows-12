@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 12</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="bootloader_action();">
+    <div id="bootloader">
+        <img draggable="false" id="system-logo-boot" src="Windows/System32/SystemLogo.svg">
+        <div id="bootloader-progress"></div>
+    </div>
+    <div id="taskbar-content">
+        <div onclick="start_button_click(); start_Action();" id="start-button" class="taskbar-button">
+            <img draggable="false" id="taskbar-button-start" class="taskbar-button-img" src="Windows/System32/SystemLogo.svg">
+        </div>
+        
+    </div>
+    <div id="menu">
+        <div id="thought-text">
+            <span id="thought">Life is too short. Enjoy it!</span>
+        </div>
+        <button onclick="start_button_click_in_window(); startLaunchExplorer();" class="new-start" id="button-start">
+            <img id="start-button-img" src="Windows/System32/computer.png">
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+ -- The Windows 12 project --
+
+First release : 
+- created new functional apps
+- added dev screen
+- added windows type folder names
+- Added custom start menu.
+
+
+Note : The first release might have alot of bugs.
+       So please tell me every bug you find in : realtechwin@gmail.com

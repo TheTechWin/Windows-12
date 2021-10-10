@@ -1,0 +1,135 @@
+body {
+    background-image: url('wallpaper.jpeg');
+    background-size: cover;
+}
+
+#bootloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    transition: transform 300ms;
+    transform: scale(1);
+    transform-origin: left bottom;
+    cursor: none;
+}
+
+#bootloader.complete {
+    transform: scale(0);
+}
+
+#system-logo-boot {
+    position: relative;
+    width: 150px;
+    top: 20%;
+}
+
+#bootloader-progress {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 7px solid white;
+    border-radius: 50%;
+    border-top: 7px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    animation: load-os 1s infinite;
+}
+
+@keyframes load-os {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#taskbar-content {
+    position: fixed;
+    top: 93%;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.755);
+    transition: transform 300ms;
+    transform: scale(0);
+    text-align: center;
+    transform-origin: bottom center;
+}
+
+#taskbar-content.active {
+    transform: scale(1);
+}
+
+.taskbar-button-img {
+    transition: width 100ms;
+    width: 30px;
+    margin-top: 5px;
+}
+
+.taskbar-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.535);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 0.5%;
+    transition: background 100ms;
+}
+
+#menu {
+    position: absolute;
+    top: 25%;
+    left: 43%;
+    z-index: 10000;
+    width: 500px;
+    height: 77%;
+    margin: -100px 0 0 -150px;
+    background: rgba(255, 255, 255, 0.511);
+    border-radius: 10px;
+    transform-origin: bottom center;
+    font-family: arial;
+    transform: scale(0);
+    transition: transform 300ms;
+    transform-origin: bottom center;
+}
+
+#menu.act {
+    transform: scale(1);
+}
+
+#thought-text {
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.864);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+#thought {
+    position: relative;
+    top: 30%;
+}
+
+.new-start {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.535);
+    transition: background 100ms;
+}
+
+#start-button-img {
+    transition: width 300ms;
+    width: 30px;
+}
+
