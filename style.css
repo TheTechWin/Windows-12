@@ -199,3 +199,8 @@ position: absolute;
    height: 1px;
    
   }
+
+  .align-center{ 
+      display: flex;
+      justify-content: center;
+  }
