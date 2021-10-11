@@ -5,6 +5,8 @@ body {
     background-repeat: no-repeat;
       height:100vh;
     overflow: hidden;
+      padding: 0;
+    margin: 0;
 }
 
 #bootloader {
@@ -51,15 +53,15 @@ body {
 }
 
 #taskbar-content {
-    position: fixed;
-    top: 93%;
-    left: 0;
+  position: fixed;
+  bottom: 0px;
+
     width: 100%;
-    height: 70%;
+    height: 67px;
     background-color: rgba(255, 255, 255, 0.755);
     transition: transform 300ms;
     transform: scale(0);
-    text-align: center;
+   text-align: center;
     transform-origin: bottom center;
 }
 
@@ -88,19 +90,18 @@ body {
 }
 
 #menu {
-    position: absolute;
-    top: 25%;
-    left: 43%;
+position: absolute;
+  bottom: 87px;
     z-index: 10000;
     width: 500px;
-    height: 77%;
-    margin: -100px 0 0 -150px;
-    background: rgba(255, 255, 255, 0.511);
+    height: 700px;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     transform-origin: bottom center;
     font-family: arial;
     transform: scale(0);
     transition: transform 300ms;
+    backdrop-filter: blur(12px);
     transform-origin: bottom center;
 }
 
