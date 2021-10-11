@@ -63,6 +63,9 @@ body {
     transform: scale(0);
    text-align: center;
     transform-origin: bottom center;
+      line-height: 67px;
+    display: flex;
+    justify-content: center;
 }
 
 #taskbar-content.active {
@@ -72,7 +75,7 @@ body {
 .taskbar-button-img {
     transition:  0.2s;
     width: 30px;
-    margin-top: 5px;
+      padding: 4px;
 }
 .taskbar-button-img:active{
     transform: scale(0.6);
@@ -82,10 +85,8 @@ body {
     width: 40px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.535);
-    margin-left: auto;
-    margin-right: auto;
+    margin: 4px;
     border-radius: 5px;
-    margin-top: 0.5%;
     transition: background 100ms;
 }
 
