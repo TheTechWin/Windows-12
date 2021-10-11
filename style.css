@@ -1,6 +1,10 @@
 body {
     background-image: url('wallpaper.jpeg');
     background-size: cover;
+     background-position: center;
+    background-repeat: no-repeat;
+      height:100vh;
+    overflow: hidden;
 }
 
 #bootloader {
@@ -64,11 +68,13 @@ body {
 }
 
 .taskbar-button-img {
-    transition: width 100ms;
+    transition:  0.2s;
     width: 30px;
     margin-top: 5px;
 }
-
+.taskbar-button-img:active{
+    transform: scale(0.6);
+}
 .taskbar-button {
     position: relative;
     width: 40px;
@@ -133,3 +139,62 @@ body {
     width: 30px;
 }
 
+#context-menu.active {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+#context-menu {
+    position: fixed;
+    margin: 3px;
+    width: 245px;
+    backdrop-filter: blur(12px);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(0);
+    transform-origin: top left;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
+}
+#context-menu {
+    position:fixed;
+    margin: 3px;
+    width:245px;
+    backdrop-filter: blur(12px);
+    border-radius:7px;
+    background:rgba(255, 255, 255, 0.9) ;
+    transform:scale(0);
+    transform-origin:top left;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    
+  }
+  #context-menu.active {
+    transform:scale(1);
+    transition:transform 300ms ease-in-out;
+  }
+  #context-menu .item {
+    margin: 1px 6px 3px 6px;
+    padding:4px 6px;
+    font-size:9.6px;
+    color: #000;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: default;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #context-menu .item:hover {
+     border-color:#AFAFAF1A;
+  }
+  #context-menu .item i {
+    display:inline-block;
+    margin-right:5px;
+    font-size: 14px;
+  }
+  #context-menu .item .bx-chevron-right{
+  transform: translateY(4px);
+  }
+  #context-menu hr {
+    margin:1px 0px;
+  background: lightgray;
+   width: 99%;
+   height: 1px;
+   
+  }
