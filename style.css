@@ -140,7 +140,7 @@ position: absolute;
 #start-button-img {
     transition: width 300ms;
     width: 30px;
-    margin-top
+    margin-top: 20px;
 }
 
 #context-menu.active {
